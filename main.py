@@ -12,8 +12,8 @@ restau = "AA"
 rgb = "AA"
 ingredient = "AA"
 user_name = "AA"
-product_code = "AA"
-headline = "AA"
+product_code = r"\b[A-Z]{3}+[0-9]{3}\b"
+headline = r"\b[A-Z]{1}[a-z]{1,}:+\s+[A-Z]{1}[a-z]{1,}\b"
 date = "AA"
 regex = [email, restau, rgb, ingredient, user_name, product_code, headline, date]
 
