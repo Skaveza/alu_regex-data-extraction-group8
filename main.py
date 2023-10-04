@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
 
 # regex patterns
 email = r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b"
-restau = "AA"
+restau = r"[A-Za-z0-9\s'&.,-]+ - [A-Za-z0-9\s'&.,-]+"
 rgb = "AA"
 ingredient = "AA"
 user_name = "AA"
