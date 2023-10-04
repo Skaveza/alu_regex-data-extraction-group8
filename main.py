@@ -7,13 +7,13 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 # regex patterns
-email = r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b"
-restau = r"[A-Za-z0-9\s'&.,-]+ - [A-Za-z0-9\s'&.,-]+"
-rgb = r"\brgb\([0-9]{3},\s[0-9]{3},\s[0-9]{3}\)\b"
+email = r"[a-zA-Z0-9._%+-]+@[a-z]+\.[a-zA-Z]{2,}"
+restau = r"[A-Z]{1}[a-z]{1,}\s-+\s+[A-Z]{1}[a-z]{1,}"
+rgb = r"[rgb]+\([0-9]{3},\s[0-9]{3},\s[0-9]{3}\)"
 ingredient = "AA"
-user_name = r"\b@[a-zA-Z]{1,}\b"
-product_code = r"\b[A-Z]{3}+[0-9]{3}\b"
-headline = r"\b[A-Z]{1}[a-z]{1,}:+\s+[A-Z]{1}[a-z]{1,}\b"
+user_name = r"@[a-zA-Z]{1,}"
+product_code = r"[A-Z]{3}+[0-9]{3}"
+headline = r"[A-Z]{1}[a-z]{1,}:+\s+[A-Z]{1}[a-z]{1,}"
 date = "AA"
 regex = [email, restau, rgb, ingredient, user_name, product_code, headline, date]
 
