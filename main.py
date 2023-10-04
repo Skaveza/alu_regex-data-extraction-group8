@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 # regex patterns
 email = r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b"
 restau = r"[A-Za-z0-9\s'&.,-]+ - [A-Za-z0-9\s'&.,-]+"
-rgb = "AA"
+rgb = r"\brgb\([0-9]{3},\s[0-9]{3},\s[0-9]{3}\)\b"
 ingredient = "AA"
 user_name = r"\b@[a-zA-Z]{1,}\b"
 product_code = r"\b[A-Z]{3}+[0-9]{3}\b"
